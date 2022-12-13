@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div align="center">
+        <button onclick="y()">Click me to see the table</button>
+    </div>
+    <table border=solid style="display:none" id="uio">
+        <tr>
+            <td id="asd0"></td>
+            <td id="qwe0"></td>
+        </tr>
+         <tr>
+            <td id="asd1"></td>
+            <td id="qwe1"></td>
+        </tr>
+         <tr>
+            <td id="asd2"></td>
+            <td id="qwe2"></td>
+        </tr>
+         <tr>
+            <td id="asd3"></td>
+            <td id="qwe3"></td>
+        </tr>
+    </table>
+<script>
+     document.getElementById("tyu").style.border=solid;
+    function x(a,name,i){
+        var a=[1,2,3,4];
+        var name=['Anakin','Obi-Wan','Luke','Leia']
+        document.getElementById("asd"+i).innerHTML = a[i];
+        document.getElementById("qwe"+i).innerHTML = name[i];
+    }
+    function y(){
+        x(0,0,0);
+        x(1,1,1);
+        x(2,2,2);
+        x(3,3,3);
+        document.getElementById("uio").style.display="";
+    }
+</script>
+</body>
+</html>
